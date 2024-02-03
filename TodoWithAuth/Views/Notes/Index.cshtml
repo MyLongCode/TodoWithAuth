@@ -1,11 +1,11 @@
 ﻿@model IEnumerable<Note>
-
-<table class="table">
-    @foreach (var item in Model)
-    {
-                <tr>
-                    <td>@item.Title</td>
-                    <td>@item.Description</td>
-                </tr>
-    }
-</table>
+<link href="@Url.Content("~/css/note.css")" rel="stylesheet" type="text/css" />
+<h1>Мои заметки:</h1>
+@foreach (var item in Model)
+{
+	<div id="note">
+		<h3>@item.Title</h3>
+		<p>@item.Description</p>
+	</div>
+	
+}

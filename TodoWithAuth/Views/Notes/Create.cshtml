@@ -1,0 +1,15 @@
+﻿@model Note﻿
+<h2>Создание заметки</h2>
+<form asp-action="Create" asp-controller="Notes" >
+    <p>
+        <label asp-for="Title">Название заметки</label><br />
+        <input type="text" asp-for="Title" required/>
+    </p>
+    <p>
+        <label asp-for="Description">Описание заметки</label><br />
+        <input type="text" asp-for="Description" required />
+    </p>
+    <p>
+        <input type="submit" value="Создать" />
+    </p>
+</form>

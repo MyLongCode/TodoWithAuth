@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using System.Security.Principal;
 using TodoWithAuth.Data;
+using TodoWithAuth.Models;
 
 namespace TodoWithAuth.Controllers
 {
@@ -12,6 +13,7 @@ namespace TodoWithAuth.Controllers
     public class NotesController : Controller
     {
         public ApplicationDbContext db;
+        public string userId;
 
         public NotesController(ApplicationDbContext context)
         {
@@ -20,10 +22,9 @@ namespace TodoWithAuth.Controllers
 
         public IActionResult Index()
         {
-            var asdfasdf = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var authUserId = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+            var userId = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name).Id;
             return View(db.Notes
-                .Where(item => item.UserId == authUserId.Id)
+                .Where(item => item.UserId == userId)
                 .ToList());
             
         }
@@ -31,6 +32,15 @@ namespace TodoWithAuth.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(string title, string description)
+        {
+            var userId = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name).Id;
+            db.Notes.Add(new Note(title, description, userId));
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

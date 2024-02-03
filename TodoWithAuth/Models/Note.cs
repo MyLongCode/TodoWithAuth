@@ -11,6 +11,12 @@ namespace TodoWithAuth.Models
         public string Description { get; set; }
         public string UserId{ get; set; }
         public IdentityUser User { get; set; }
-        
+
+        public Note(string title, string description, string userId)
+        {
+            Title = title;
+            Description = description;
+            UserId = userId;
+        }
     }
 }
