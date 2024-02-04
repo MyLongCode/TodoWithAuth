@@ -42,5 +42,14 @@ namespace TodoWithAuth.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var note = db.Notes.FirstOrDefault(u => u.Id == id);
+            db.Notes.Remove(note);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
