@@ -7,10 +7,16 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace TodoWithAuth.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
-        [Authorize(Roles = "admin")]
-        public IActionResult Index()
+        public ApplicationDbContext db;
+        public AdminController(ApplicationDbContext db)
+        {
+            this.db = db;
+        }
+
+        public IActionResult Statistics()
         {
             return View();
         }

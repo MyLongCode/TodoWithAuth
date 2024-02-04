@@ -10,8 +10,10 @@ namespace TodoWithAuth.Controllers
     {
         RoleManager<IdentityRole> _roleManager;
         UserManager<IdentityUser> _userManager;
-        public RolesController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
+        private readonly ILogger<HomeController> _logger;
+        public RolesController(ILogger<HomeController> logger,RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
         {
+            _logger = logger;
             _roleManager = roleManager;
             _userManager = userManager;
         }
