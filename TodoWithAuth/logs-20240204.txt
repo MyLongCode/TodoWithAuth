@@ -1,0 +1,452 @@
+2024-02-04T15:42:03.9839234+05:00  [INF] Now listening on: "https://localhost:7075" (d826f4b8)
+2024-02-04T15:42:03.9876137+05:00  [INF] Now listening on: "http://localhost:5075" (d826f4b8)
+2024-02-04T15:42:03.9932356+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-02-04T15:42:03.9933775+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2024-02-04T15:42:03.9933936+05:00  [INF] Content root path: "C:\Users\user\OneDrive\Desktop\Прога C#\Самостоятельно\TodoWithAuth\TodoWithAuth\" (b5d60022)
+2024-02-04T15:42:06.5889607+05:00 0HN15DNMIK4DI:00000001 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:07.2705056+05:00 0HN15DNMIK4DI:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:07.3137762+05:00 0HN15DNMIK4DI:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:07.9670810+05:00 0HN15DNMIK4DI:00000001 [INF] Executed DbCommand ("32"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:42:08.0507350+05:00 0HN15DNMIK4DI:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
+2024-02-04T15:42:45.1191902+05:00  [INF] Now listening on: "https://localhost:7075" (d826f4b8)
+2024-02-04T15:42:45.1296851+05:00  [INF] Now listening on: "http://localhost:5075" (d826f4b8)
+2024-02-04T15:42:45.1517541+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-02-04T15:42:45.1520469+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2024-02-04T15:42:45.1521122+05:00  [INF] Content root path: "C:\Users\user\OneDrive\Desktop\Прога C#\Самостоятельно\TodoWithAuth\TodoWithAuth\" (b5d60022)
+2024-02-04T15:42:47.4804637+05:00 0HN15DO2QIKSF:00000001 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:48.1291676+05:00 0HN15DO2QIKSF:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:48.2038162+05:00 0HN15DO2QIKSF:00000001 [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:48.9172298+05:00 0HN15DO2QIKSF:00000001 [INF] Executed DbCommand ("40"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:42:49.0485483+05:00 0HN15DO2QIKSF:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
+2024-02-04T15:42:50.4991876+05:00 0HN15DO2QIKSF:00000007 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:50.5647063+05:00 0HN15DO2QIKSF:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:50.5665283+05:00 0HN15DO2QIKSF:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:50.5777661+05:00 0HN15DO2QIKSF:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2024-02-04T15:42:50.9234757+05:00 0HN15DO2QIKSF:0000000D [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:50.9288349+05:00 0HN15DO2QIKSF:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:50.9308857+05:00 0HN15DO2QIKSF:0000000D [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:50.9499781+05:00 0HN15DO2QIKSF:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2024-02-04T15:42:51.2317211+05:00 0HN15DO2QIKSF:00000013 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:51.2323432+05:00 0HN15DO2QIKSF:00000013 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:51.2338829+05:00 0HN15DO2QIKSF:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:51.5349516+05:00 0HN15DO2QIKSF:00000019 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:51.5353672+05:00 0HN15DO2QIKSF:00000019 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:51.5365824+05:00 0HN15DO2QIKSF:00000019 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:51.5401330+05:00 0HN15DO2QIKSF:00000019 [INF] Executed DbCommand ("0"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:42:51.5407944+05:00 0HN15DO2QIKSF:00000019 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
+2024-02-04T15:42:54.7457207+05:00 0HN15DO2QIKSF:0000001F [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:54.7463183+05:00 0HN15DO2QIKSF:0000001F [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:54.7481050+05:00 0HN15DO2QIKSF:0000001F [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:55.1374588+05:00 0HN15DO2QIKSF:00000025 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:55.1381892+05:00 0HN15DO2QIKSF:00000025 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:55.1404869+05:00 0HN15DO2QIKSF:00000025 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:55.1413031+05:00 0HN15DO2QIKSF:00000025 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2024-02-04T15:42:55.5471177+05:00 0HN15DO2QIKSF:0000002B [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:55.5477085+05:00 0HN15DO2QIKSF:0000002B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:55.5495528+05:00 0HN15DO2QIKSF:0000002B [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:55.5503471+05:00 0HN15DO2QIKSF:0000002B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2024-02-04T15:42:55.9231043+05:00 0HN15DO2QIKSF:00000031 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:55.9238611+05:00 0HN15DO2QIKSF:00000031 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:55.9258386+05:00 0HN15DO2QIKSF:00000031 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:55.9265521+05:00 0HN15DO2QIKSF:00000031 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2024-02-04T15:42:56.2085035+05:00 0HN15DO2QIKSF:00000037 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:56.2090850+05:00 0HN15DO2QIKSF:00000037 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:56.2111573+05:00 0HN15DO2QIKSF:00000037 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:58.8874383+05:00 0HN15DO2QIKSF:0000003D [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:58.8880608+05:00 0HN15DO2QIKSF:0000003D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:58.8898034+05:00 0HN15DO2QIKSF:0000003D [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:58.9362880+05:00 0HN15DO2QIKSF:0000003D [INF] Executed DbCommand ("0"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:42:59.1399931+05:00 0HN15DO2QIKSF:0000003D [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Notes] ([Description], [Title], [UserId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Notes]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2024-02-04T15:42:59.2751690+05:00 0HN15DO2QIKSF:0000003F [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:59.2758444+05:00 0HN15DO2QIKSF:0000003F [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:59.2781408+05:00 0HN15DO2QIKSF:0000003F [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:59.2795759+05:00 0HN15DO2QIKSF:0000003F [INF] Executed DbCommand ("0"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:42:59.2806420+05:00 0HN15DO2QIKSF:0000003F [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
+2024-02-04T15:42:59.5128330+05:00 0HN15DO2QIKSF:00000045 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:42:59.5134337+05:00 0HN15DO2QIKSF:00000045 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:42:59.5152227+05:00 0HN15DO2QIKSF:00000045 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:42:59.5161497+05:00 0HN15DO2QIKSF:00000045 [INF] Executed DbCommand ("0"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:42:59.5171137+05:00 0HN15DO2QIKSF:00000045 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
+2024-02-04T15:43:00.1695613+05:00 0HN15DO2QIKSF:0000004B [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:43:00.1701633+05:00 0HN15DO2QIKSF:0000004B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:43:00.1722106+05:00 0HN15DO2QIKSF:0000004B [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:43:00.1822666+05:00 0HN15DO2QIKSF:0000004B [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[Id] = @__id_0" (0723d8ff)
+2024-02-04T15:43:00.2062103+05:00 0HN15DO2QIKSF:0000004B [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Notes]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2024-02-04T15:43:00.2339570+05:00 0HN15DO2QIKSF:0000004D [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:43:00.2344768+05:00 0HN15DO2QIKSF:0000004D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:43:00.2361006+05:00 0HN15DO2QIKSF:0000004D [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:43:00.2368669+05:00 0HN15DO2QIKSF:0000004D [INF] Executed DbCommand ("0"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:43:00.2375671+05:00 0HN15DO2QIKSF:0000004D [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
+2024-02-04T15:43:00.6019740+05:00 0HN15DO2QIKSF:00000053 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:43:00.6025212+05:00 0HN15DO2QIKSF:00000053 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:43:00.6043245+05:00 0HN15DO2QIKSF:00000053 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:43:00.6054381+05:00 0HN15DO2QIKSF:00000053 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[Id] = @__id_0" (0723d8ff)
+2024-02-04T15:43:00.6064459+05:00 0HN15DO2QIKSF:00000053 [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Notes]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2024-02-04T15:43:00.6251537+05:00 0HN15DO2QIKSF:00000055 [INF] Entity Framework Core "6.0.26" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.26"' with options: "None" (d2805559)
+2024-02-04T15:43:00.6256818+05:00 0HN15DO2QIKSF:00000055 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-02-04T15:43:00.6275393+05:00 0HN15DO2QIKSF:00000055 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2024-02-04T15:43:00.6286299+05:00 0HN15DO2QIKSF:00000055 [INF] Executed DbCommand ("0"ms) [Parameters=["@__User_Identity_Name_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__User_Identity_Name_0" (0723d8ff)
+2024-02-04T15:43:00.6296947+05:00 0HN15DO2QIKSF:00000055 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Description], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0" (0723d8ff)
