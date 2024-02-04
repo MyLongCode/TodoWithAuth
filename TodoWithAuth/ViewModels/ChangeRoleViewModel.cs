@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 
+namespace TodoWithAuth.ViewModels;
 public class ChangeRoleViewModel
 {
     public string UserId { get; set; }
