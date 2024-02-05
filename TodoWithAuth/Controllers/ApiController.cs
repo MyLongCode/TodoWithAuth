@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Web.Helpers;
 using TodoWithAuth.Data;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,22 +12,23 @@ namespace TodoWithAuth.Controllers
     {
         ApplicationDbContext db;
         public ApiController(ApplicationDbContext context) => db = context;
-        // GET: api/<ApiController>
+
+        [Route("user")]
         [HttpGet]
         public IActionResult GetUsers()
         {
             return Ok(db.Users.ToList());
         }
-
-        // GET api/<ApiController>/5
+        [Route("user/{id}")]
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(string? id)
         {
-            return "value";
+            var user = db.Users.FirstOrDefault(u => u.Id == id);
+            if (user == null) return BadRequest("user not found");
+            return Ok(user);
         }
-
-        // POST api/<ApiController>
-        [HttpPost]
+        [Route("user/")]
+        [HttpDelete]
         public void Post([FromBody] string value)
         {
         }

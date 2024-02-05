@@ -16,7 +16,7 @@ namespace TodoWithAuth.Controllers
             this.db = db;
         }
 
-        public IActionResult Statistics()
+        public IActionResult Index()
         {
             return View();
         }
